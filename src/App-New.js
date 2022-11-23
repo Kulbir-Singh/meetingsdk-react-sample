@@ -20,6 +20,11 @@ function App() {
   // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/component-view/webinars#join-registered
   // var registrantToken = ''
 
+  const meetingURL =
+    "https://us04web.zoom.us/j/79198330405?pwd=YYJjOsefrBMJtN94HLHa4M2iZogLjR.1";
+  const meetingId = meetingURL.split("j/")[1].split("?")[0];
+  const meetingPwd = meetingURL.split("j/")[1].split("pwd=")[1];
+
   const signatureEndpoint = "http://localhost:4000";
   const sdkKey = "1YMtPEdr0zZEkZtGi2OrZ4aj7zE3r2cPmgg4";
   const meetingNumber = "79148619137";
